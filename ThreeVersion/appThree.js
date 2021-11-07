@@ -120,8 +120,8 @@ var cube = new THREE.Mesh( geometry, material );
 scene.add( cube );
 
 var artoolkitMarker = new THREEx.ArMarkerControls(arToolkitContext, cube, {
-    type : 'pattern',
-    patternUrl : '/data/markers/patt.hiro',
+    type : '',
+    patternUrl : '',
 })
 
 
