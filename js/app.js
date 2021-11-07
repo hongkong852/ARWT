@@ -1,4 +1,4 @@
-const unityInstance = UnityLoader.instantiate("unityContainer", "Build/ARWT-Build.json");
+const unityInstance = UnityLoader.instantiate("unityContainer", "Build/ARWT-Build_basic.json");
 let isCameraReady = false;
 let isDetectionManagerReady = false;
 let gl = null;
