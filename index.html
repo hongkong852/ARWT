@@ -8,31 +8,21 @@
     <script src="js/lib/aframe-ar.js"></script>
     <script src="Build/UnityLoader.js"></script>
     <script src="js/app.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/aframevr/aframe@1c2407b26c61958baa93967b5412487cd94b290b/dist/aframe-master.min.js"></script>
-    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>  
-   
+
   </head>
 
   <body style="margin: 0px; overflow: hidden;">
-    <div id="unityContainer" style="z-index: 2" ></div>
-    <a-scene vr-mode-ui="enabled: false;" renderer="logarithmicDepthBuffer: true;"  embedded   arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;" copycanvas>
-      
-      
-     
-		  <!--<a-marker type="pattern" url="data/markers/Hiro.patt" markercontroller="name : Hiro"></a-marker>-->
-			<!--<a-marker type="pattern" url="data/markers/Nutty.patt" markercontroller="name : Nutty"></a-marker>-->
-			<!--<a-marker type="pattern" url="data/markers/NuttyCardboard.patt" markercontroller="name : NuttyCardboard"></a-marker>-->
-			<!--<a-marker type="pattern" url="data/markers/pattern.patt" markercontroller="name : pattern"></a-marker>-->
-      <a-nft
-      type="nft"
-      url="data/markers/trex"
-      smooth="true"
-      smoothCount="10"
-      smoothTolerance=".01"
-      smoothThreshold="5"
-      > 
+    <a-scene embedded arjs vr-mode-ui="enabled: false" copycanvas>
+      <div id="unityContainer" style="z-index: 2" ></div>
+      <!-- <a-marker preset="hiro"> <a-box></a-box> </a-marker> -->
+      <!-- <a-marker type="pattern" url="data/markers/pattern-arjs.patt"><a-box></a-box></a-marker> -->
+      <!-- <a-marker type="pattern" url="data/markers/test.patt" markercontroller="name : hiro"></a-marker> -->
 
-       </a-nft>
+			<a-marker type="pattern" url="data/markers/Hiro.patt" markercontroller="name : Hiro"></a-marker>
+			<a-marker type="pattern" url="data/markers/Nutty.patt" markercontroller="name : Nutty"></a-marker>
+			<a-marker type="pattern" url="data/markers/NuttyCardboard.patt" markercontroller="name : NuttyCardboard"></a-marker>
+			<a-marker type="pattern" url="data/markers/orangeedesign.patt" markercontroller="name : orangeedesign"></a-marker>
+
       <a-entity camera cameratransform></a-entity>
     </a-scene>
   </body>
